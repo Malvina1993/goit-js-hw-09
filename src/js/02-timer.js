@@ -58,7 +58,9 @@ function onBtnStartTimerClick(evn) {
 function addLeadingZero(value) {
     if (String(value).length === 1) {
         return String(value).padStart(2, "0");  
-    }
+    } else {
+        return value;
+    };
     
     
 }
@@ -82,7 +84,7 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-console.log('працює');
+
 
 
 
