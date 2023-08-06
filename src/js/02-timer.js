@@ -82,7 +82,7 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
-console.log();
+console.log('працює');
 
 
 
