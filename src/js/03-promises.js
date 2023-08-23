@@ -11,7 +11,7 @@ function onBtnSudmitClick(evn) {
   let delay = Number(formEl.elements.delay.value);
   const step = Number(formEl.elements.step.value);
   const amount = formEl.elements.amount.value;
-
+  formEl.reset();
   for (let i = 1; i <= amount; i++) {
     createPromise(i, delay).then(({ position, delay }) => {
     Notify.success(`✅ Fulfilled promise ${position} in ${delay}ms`);
